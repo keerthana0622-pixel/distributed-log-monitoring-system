@@ -39,3 +39,19 @@ Logger Clients → Flask API (app.py) → Parser → Database → Analytics & Er
 - logger_client.py → Simulates distributed services
 - config.py → Configuration settings
 - requirements.txt → Dependencies
+
+## 📡 Sample Request & Responses
+
+### Ingest Log
+
+**POST /logs**
+
+Request:
+{
+  "log": "2026-03-31 10:15:22 ERROR auth_service User login failed"
+}
+
+Response:
+{
+  "message": "Log stored successfully"
+}
